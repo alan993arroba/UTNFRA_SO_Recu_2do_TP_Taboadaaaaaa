@@ -1,5 +1,5 @@
-# 1. Usar la imagen base de Nginx (requerido por el examen)
+# 1. Usar la imagen base de Nginx 
 FROM nginx:latest
 
-# 2. Copiar el contenido de la carpeta web al directorio por defecto de Nginx
+# 2. 
 COPY web/ /usr/share/nginx/html
