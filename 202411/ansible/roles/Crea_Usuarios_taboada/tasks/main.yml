@@ -1,0 +1,30 @@
+---
+# Tareas para el Rol: Crea_Usuarios_taboada
+
+- name: 1. Crear el grupo GAlumnos
+  group:
+    name: GAlumnos
+    state: present
+
+- name: 2. Crear el grupo GProfesores
+  group:
+    name: GProfesores
+    state: present
+
+- name: 3. Crear el usuario Alumno y agregarlo a GAlumnos
+  user:
+    name: Alumno
+    groups: GAlumnos
+    append: yes
+    state: present
+    create_home: yes
+    shell: /bin/bash
+
+- name: 4. Crear el usuario Profesor y agregarlo a GProfesores
+  user:
+    name: Profesor
+    groups: GProfesores
+    append: yes
+    state: present
+    create_home: yes
+    shell: /bin/bash

@@ -1,0 +1,11 @@
+---
+# Playbook Principal: Automatización del Examen SO
+- name: Tareas de Administracion del Servidor
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  become: yes
+
+  roles:
+    - Crea_Usuarios_taboada
+    - Crea_Carpetas_taboada

@@ -1,0 +1,24 @@
+---
+
+
+- name: 1. Crear el directorio /tmp/TrabajoSO con permisos 775
+  file:
+    path: /tmp/TrabajoSO
+    state: directory
+    mode: '0775'
+    owner: Profesor
+    group: GProfesores
+
+- name: 2. Crear el directorio /tmp/TrabajoSO/Alumnos con permisos 770
+  file:
+    path: /tmp/TrabajoSO/Alumnos
+    state: directory
+    mode: '0770'
+    owner: Alumno
+    group: GAlumnos
+
+- name: 3. Establecer el sticky bit en /tmp/TrabajoSO/Alumnos
+  file:
+    path: /tmp/TrabajoSO/Alumnos
+    state: directory
+    mode: 'a+t' 

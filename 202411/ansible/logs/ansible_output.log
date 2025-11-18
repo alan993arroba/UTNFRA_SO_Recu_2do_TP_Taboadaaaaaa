@@ -1,0 +1,20 @@
+2025-11-18 04:03:42,440 p=10841 u=vagrant n=ansible | PLAY [Tareas de Administracion del Servidor] *********************************************************************************************************************************************************************
+2025-11-18 04:03:42,510 p=10841 u=vagrant n=ansible | TASK [Crea_Usuarios_taboada : 1. Crear el grupo GAlumnos] ********************************************************************************************************************************************************
+2025-11-18 04:03:44,063 p=10841 u=vagrant n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2025-11-18 04:03:44,067 p=10841 u=vagrant n=ansible | changed: [localhost]
+2025-11-18 04:03:44,077 p=10841 u=vagrant n=ansible | TASK [Crea_Usuarios_taboada : 2. Crear el grupo GProfesores] *****************************************************************************************************************************************************
+2025-11-18 04:03:44,938 p=10841 u=vagrant n=ansible | changed: [localhost]
+2025-11-18 04:03:44,949 p=10841 u=vagrant n=ansible | TASK [Crea_Usuarios_taboada : 3. Crear el usuario Alumno y agregarlo a GAlumnos] *********************************************************************************************************************************
+2025-11-18 04:03:46,531 p=10841 u=vagrant n=ansible | changed: [localhost]
+2025-11-18 04:03:46,541 p=10841 u=vagrant n=ansible | TASK [Crea_Usuarios_taboada : 4. Crear el usuario Profesor y agregarlo a GProfesores] ****************************************************************************************************************************
+2025-11-18 04:03:47,585 p=10841 u=vagrant n=ansible | changed: [localhost]
+2025-11-18 04:03:47,596 p=10841 u=vagrant n=ansible | TASK [Crea_Carpetas_taboada : 1. Crear el directorio /tmp/TrabajoSO con permisos 775] ****************************************************************************************************************************
+2025-11-18 04:03:48,791 p=10841 u=vagrant n=ansible | changed: [localhost]
+2025-11-18 04:03:48,801 p=10841 u=vagrant n=ansible | TASK [Crea_Carpetas_taboada : 2. Crear el directorio /tmp/TrabajoSO/Alumnos con permisos 770] ********************************************************************************************************************
+2025-11-18 04:03:49,557 p=10841 u=vagrant n=ansible | changed: [localhost]
+2025-11-18 04:03:49,570 p=10841 u=vagrant n=ansible | TASK [Crea_Carpetas_taboada : 3. Establecer el sticky bit en /tmp/TrabajoSO/Alumnos] *****************************************************************************************************************************
+2025-11-18 04:03:50,535 p=10841 u=vagrant n=ansible | changed: [localhost]
+2025-11-18 04:03:50,548 p=10841 u=vagrant n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************************
+2025-11-18 04:03:50,552 p=10841 u=vagrant n=ansible | localhost                  : ok=7    changed=7    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
